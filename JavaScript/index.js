@@ -1,13 +1,9 @@
-
-let markWeight = 78;
-let markHeight = 1.69;
-let johnWeight = 92;
-let johnHeight = 1.95;
-let markBMI = markWeight/markHeight*markHeight;
-let johnBMI = johnWeight/johnHeight*johnHeight;
-let greaterBMI = false;
-if( markBMI > johnBMI)
-{
-    greaterBMI = true;
-}
-console.log( greaterBMI);
+function disappear(){
+      const div=document.getElementById('div')
+      const child = div.querySelector('#paragraph');
+      child.style.display="none";
+      const para = document.createElement("h3");
+      para.innerText = "This is a heading.";
+      div.appendChild(para);
+      
+    }
